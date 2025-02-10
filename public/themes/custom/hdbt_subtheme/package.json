@@ -10,7 +10,8 @@
     "build": "webpack --progress --mode=production --config webpack.config.js",
     "preinstall": "npx update-browserslist-db@latest",
     "lint": "lint-staged",
-    "lint:js": "eslint --fix src/"
+    "lint:js": "eslint --fix src/",
+    "prepare": "cd ../../../.. && husky install public/themes/custom/hdbt_subtheme/.husky || true"
   },
   "dependencies": {
     "@babel/core": "^7.23.2",
@@ -54,7 +55,6 @@
     "postcss-nesting": "^10.0.2",
     "postcss-preset-env": "^7.4.3",
     "postcss-scss": "^4.0.0",
-    "pre-commit": "^1.2.2",
     "prettier": "^2.3.2",
     "sass": "^1.69.5",
     "sass-loader": "^13.0.0",
